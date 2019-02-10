@@ -1,0 +1,169 @@
+h1{
+  font-size: 2.5em;
+  font-weight: bold;
+  background: white;
+}
+
+h2{
+  font-size: x-large;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+}
+
+h3{
+  font-size: large;
+  font-weight: bold;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  background: #15181B;
+  line-height: 2;
+}
+
+a.skip{
+  color: #888;
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+}
+a.skip:focus{
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+nav a {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.home{
+  font-weight: bold;
+  margin-right: auto;
+}
+.current {
+  text-decoration: underline;
+  font-weight: bold;
+}
+nav a:hover {
+  background-color: #000;
+  opacity: .7;
+}
+main > img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mainpage{
+  background-image: url("../imgs/umma.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro{
+  display: flex;
+  flex-direction: row-reverse;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+.intro div{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo{
+  width: 250px;
+  opacity: .75;
+}
+.logo > img{
+  width: 100%;
+}
+.hello{
+  width: 450px;
+  color: white;
+}
+.hello > h1{
+  margin: 0px;
+  padding: 0;
+  background: none;
+}
+.arrow{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+main {
+  background: white;
+  padding: 10%;
+}
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 50px;
+}
+.gridItem{
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+
+}
+
+footer{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px;
+  background-color: #15181B;
+}
+
+@media only screen and (min-width: 600px){
+  /*mobile first design*/
+}
+
+@media screen and (max-width: 865px) {
+  nav, .intro{
+    flex-direction: column;
+  }
+  .intro{
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .intro > div{
+    padding: 0px;
+  }
+  .logo{
+    width: 300px;
+  }
+  .hello{
+    width: auto;
+  }
+  body{
+    margin: 0%;
+  }
+}

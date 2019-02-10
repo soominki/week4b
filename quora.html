@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/cssreset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Quora Redesign</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <a href="index.html" class="home"><i class="fas fa-home fa-lg" style="color: white"></i></a>
+        <a href="index.html#content">Work</a>
+        <a href="about.html">About Me</a>
+        <a href="docs/soomin_resume.pdf">Resume</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Quora Redesign</h1>
+      <img src="imgs/quoralogo.png" alt="Quora's circular logo" width="200">
+      <h2>Challenge</h2>
+      <p>
+        Quora (quora.com) is a user-generated social media platform where
+        members can answer, edit, and ask questions to a community. As a team
+        of three, we were challenged to evaluate and analyze the online community
+        on Quora and then come up with new features or redesign existing features
+        on the platform. Specifically, we chose to analyze Quora through the
+        lens of users commitment and user contribution and how we could boost
+        both facets.
+      </p>
+
+      <h2>Research</h2>
+      <p>
+        To analyze the platform, we came up with two research methods. For the
+        first method, we went in as users ourselves and interacted with the
+        community to first hand see how specific features of Quora encouraged
+        contribution and commitment. We examined everything from the home feed,
+        answer feed, profile and user interactions and then compared the
+        implementation of these features to design claims from Chapters 2 and 3
+        of "Building Sucessful Online Communities" by Robert E. Kraut and Paul
+        Resnick.
+      </p>
+      <p>
+        For the second method, we asked users and aggregated data from about
+        40 different existing Quora posts to analyze users’ views of commitment
+        and contribution. This method was uniquely possible due to the nature of
+        Quora being a question and answer platform and having so much information
+        out in the open.
+      </p>
+
+      <h2>Problems</h2>
+      <p>
+        Through our research we found several ways that Quora's design features
+        successfully motivate user commitment and contribution. However, we also
+        found several avenues for improvement and platform features that currently
+        discourage users from using the site and chose to focus on three main
+        problems to redesign.
+      </p>
+      <ol>
+        <li>OLD QUESTIONS WITH NO ANSWERS NEVER GET ANY ANSWERS</li>
+        <li>
+          The feed of Quora tends to focus on trying to get new questions
+          answered and has questions quickly disappear when they get no
+          attention. The questions that don’t get answers immediately almost
+          never get answered in the future. This is can make it especially
+          hard for new users to stay committed to Quora if they contribute
+          questions but fail to get answers.
+        </li>
+        <li>THERE ARE TWO DISTINCT VIEWS ON HOW QUORA SHOULD BE USED</li>
+        <li>
+          There were also two distinctly different social norms that divided the
+          way that users interact with the platform. One set of users viewed
+          Quora as a space for free discussion and discourse to develop ideas.
+          This would look like asking ambiguous questions about people’s
+          thoughts towards certain topics or giving opinions about various
+          subjects. Meanwhile, the other set of users viewed Quora as a rigid
+          space for clear questions and knowledgeable answers. These opposing
+          viewpoints on how to use Quora make it hard for people to grasp how
+          to use Quora and discourage especially new users from participation.
+        </li>
+        <li>THE QUORA ALGORITHM CAN COME OFF AS CREEPY</li>
+        <li>
+          The personalization algorithm of Quora can sometimes come off as too
+          personalized and creep users away from using the platform. The
+          platform for some reason tends to know more information about the user
+          than the user inputs. It also appears that Quora automatically adds
+          topics to users’ feed without consent, which further detracts users.
+        </li>
+      </ol>
+
+      <h2>Proposed Solutions</h2>
+      <p>
+        Overall, there are several barriers to users asking questions or
+        answering questions and addressing these would help solve the problem
+        of low contribution and commitment. To fix some of these problems, we
+        created a few new design features that could be incorporated into the
+        Quora platform.
+      </p>
+      <h3>ReAsk</h3>
+      <p>
+        For starters, we would like to create a newly-designed “ReAsk” feature
+        where unanswered questions have another chance to be answered on the
+        platform. Since one of the problems on Quora was the extremely large
+        amount of questions that go unanswered, having a “ReAsk” option would
+        help these questions come back into the main feed so that they could be
+        answered. Users who might have missed these questions before now have an
+        opportunity to see them, and the user putting out the original question
+        would have a higher chance of getting a question answered, thus increasing
+        their desire to contribute to the platform. Some questions might be
+        insignificant or contribute little or nothing to the site, so we would
+        intentionally set a limit on how many times a question can be re-asked
+        before it gets covered up again by the rest of the feed.
+      </p>
+      <h3>New Separation of Feed</h3>
+      <p>
+        Since we also took notice of the division between users, (those who
+        answer and ask straightforward questions with specific answers, and
+        those who like to discuss opinions and experiences) we decided we could
+        further bring more users into the community by catering the platform to
+        whichever category each user falls under. We would have a “Quora Answer”
+        mode and “Quora Discussion” mode along with a combined default mode where
+        the user is able to see both modes if they choose to. First, when a user
+        asks a question they would be able to specify if they wish their
+        answers to be more straightforward or discussion-based. For example,
+        if a user asked the question “What do you like best about the food in
+        Singapore?” they would most likely select this question to be under
+        “Quora Discussion” so that the users only interested in discussion
+        (or users interested in both modes) would see this question. This helps
+        users who prefer one type to have a more concise feed with content
+        they want to contribute to, and users asking these questions also
+        would have a higher rate of visibility since a smaller audience
+        (who are more likely to answer these types of questions) would be
+        viewing his or her question.
+      </p>
+      <h3>More Controlled Feed</h3>
+      <p>
+        To make users feel more comfortable with the site and stay engaged with
+        the platform we proposed a more controlled feed. Before Quora
+        automatically adds a new topic, we would design a section at the top of
+        a user’s feed, say every 10 page loads, with recommended topics Quora
+        believes would be relatable and interesting to that user. Quora would
+        have the option to add these topics to the home feed, displaying maybe
+        only 3 or 4 topics at a time. There would also be a “explore other
+        recommended topics” option so that if the user is curious as to what
+        other topics are out there, they are able to further interact with these
+        other topics they might not have been exposed to before. This way we can
+        cater to the users who want to deal exclusively with their topics of
+        interest as well as the more curious, open-minded users.
+      </p>
+    </main>
+    <footer>
+      <p>coded with ♡ by Soomin Kim</p>
+    </footer>
+  </body>
+</html>
